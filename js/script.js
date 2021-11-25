@@ -5,7 +5,6 @@ const studente = {
 };
 
 for(let key in studente) {
-    // console.log(studente[key])
 }
 
 const studenti = [
@@ -26,8 +25,13 @@ const studenti = [
     }
 ]
 for(let i = 0; i < studenti.length; i++) {
-    // console.log(studenti[i]);
     const studente = studenti[i];
     console.log(studente['nome'],studente['cognome'])
 }
 
+const user = {
+    nome: prompt('Digita il tuo nome'),
+    cognome: prompt('Digita il tuo cognome'),
+    eta: prompt('Digita la tua eta'),
+}
+console.log(user['nome'],user['cognome'],user['eta']);
